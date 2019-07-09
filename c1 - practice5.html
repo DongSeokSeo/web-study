@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>폼태그 연습</title>
+
+​
+
+</head>
+
+<body>
+
+<!-- 메소드에 get 이랑 post 구분 중요. 보안적으로-->
+
+<form method="get" action="index.html">
+
+* 아이디 <input type="text" name="id1" size="30" autofocus placeholder="영문 아이디"><br>
+
+* 암호 &nbsp&nbsp&nbsp<input type="password" name="pw1" required>
+
+<input type="submit" name="" value="로그인"><br>
+
+<hr>
+
+<br>
+
+<textarea cols="50" rows="10">
+
+여기에 글자를 넣으면
+
+</textarea><br> 
+
+​
+
+<!-- list 속성과 id 속성을 반드시 일치시켜야 한다. -->
+
+여행지 : <input type="text" list="aa">
+
+<datalist id="aa">
+
+<option value="가나1"></option>
+
+<option value="가나2"></option>
+
+<option value="가나3"></option>
+
+</datalist>
+
+​
+
+<select>
+
+<option>여기는</option>
+
+<option>텍스트</option>
+
+<option>입력 없이</option>
+
+<option selected>선택만</option>
+
+<option>가능함</option>
+
+​
+
+</select>
+
+<!-- 쉬프트 누르고 여러개 선택 가능 -->
+
+<select multiple>
+
+<option>여기는</option>
+
+<option>텍스트</option>
+
+<option>입력 없이</option>
+
+<option selected>선택만</option>
+
+<option>가능함</option>
+
+</select>
+
+</form>
+
+<form>
+
+클릭<input type="button" name="" value="여기다가 클릭" onclick="alert('쉬는시간')"><br>
+
+<button>버튼 클릭</button>
+
+<!-- 버튼 클릭 부분에 이미지도 넣을 수 있음. -->
+
+​
+
+</form>
+
+​
+
+​
+
+</body>
+
+</html>
+
+
+
+
