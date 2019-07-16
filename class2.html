@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>회원가입 폼</title>
+</head>
+<body>
+<h3> 회원가입 폼 : CSS </h3>
+<form>
+<hr>
+<table border="2" align="left" width="50%">
+<tr>
+<td><b>이름:</b></td>
+<td><INPUT type="text" name="name" size=30 maxlength=60>
+</td>
+</tr>
+<tr>
+<td><b>휴대폰번호:</b></td>
+<td><INPUT type="text" name="phone_number" size=3 maxlength=3>-
+       <INPUT type="text" name="phone_number" size=4 maxlength=4>-
+       <INPUT type="text" name="phone_number" size=4 maxlength=4>
+</td>
+</tr>
+
+<tr>
+<td><b>주소 :</b></td>
+<td><TEXTAREA name="address" rows=5 cols=60></TEXTAREA>
+</td>
+</tr>
+<tr>
+<td><b>성별:</b></td>
+<td><INPUT type="radio" name="gender" value="male">남자
+<INPUT type="radio" name="gender" value="female">여자
+</td>
+</tr>
+
+<tr>
+<td><b>관심분야:</b></td>
+<td>
+<INPUT type="checkbox" name="interest" value="network">네트워크
+<INPUT type="checkbox" name="interest" value="web">Web
+<INPUT type="checkbox" name="interest" value="BOB">BOB
+<INPUT type="checkbox" name="interest" value="blockchain">블록체인
+</td>
+</tr>
+
+<tr>
+<td><b>학년:</b></td>
+<td>
+<SELECT name="학년" size=3>
+   <OPTION>1학년
+   <OPTION>2학년
+   <OPTION>3학년       
+</td>
+</tr>
+
+<tr>
+<td><b>전공:</b></td>
+<td>
+<SELECT name="전공">--선택--
+   <OPTION>MSDE
+   <OPTION>산공
+   <OPTION>컴공
+</td>
+</tr>
+
+<tr>
+<td><b>비밀번호:</b></td>
+<td>
+<INPUT type="password" name="pwd" size=15 maxlength=15>
+</td>
+</tr>
+</table>
+
+<INPUT type="Submit" value="제출">
+<INPUT type="Reset" value="취소"><br/>
+<IMG src = "./css.png" width = "300">
+
+</form>
+</body>
+</html>
