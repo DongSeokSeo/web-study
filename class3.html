@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>웹스터디</title>
+</head>
+<body>
+   <h1 title="마우스 대면 글씨 떠요">문단 제목 태그</h1>
+   <p title="자동으로 위아래 한줄 띄어줌">단락 나누기 태그</p>
+   <hr title="수평선 태그" color="red" size="10px"/>
+   html에서 글을 쓸때 공백은 하나만 입력되는데 두번이상 입력하려면<br/>
+   스페이스바 대신 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;를 입력하세요.
+   <pre>개발자의 포멧 그대로 출력합니다.
+          적힌     대로   그대
+      로 출력해요.
+   </pre>
+   <div title="라인독점">
+      블록 태그
+   </div>
+   <span title = "문장속에서 일부 구성">
+      인라인 태그
+   </span>
+   <img src="./css.png" alt="이미지 설명입니다." width="200px" height="200ps"/>
+   <ol type="i" title = "순서있는 리스트. 다른 문자 쓰고 싶으면 ul태그 사용">
+      <li>리스트1</li>
+      <li>리스트2</li>
+      <li>리스트3</li>
+   </ol>
+   <dl title="정의 리스트입니다. 자동들여쓰기 지원">
+      <dt>용어1</dt>
+      <dd>설명1입니다.</dd>
+      <dt>용어2</dt>
+      <dd>설명2입니다.</dd>
+   </dl>
+   <table border="1">
+      <caption>표제목</caption>
+      <thead>
+         <th colspan="2">테이블 머리글</th>
+      </thead>
+      <tbody>
+         <tr>
+            <td>1행1열</td><td>1행2열</td>
+         </tr>
+         <tr><td>2행1열</td><td>2행2열</td></tr>
+      </tbody>
+      <tfoot>
+         <tr><td colspan="2">테이블 바닥글</td></tr>
+      </tfoot>
+   </table>
+   <a href = "http://www.naver.com" target = "_blank">새탭으로 열기</a>
+   <iframe src = "http://www.kosaf.go.kr/">해당 url이 지원안하면 이글이 보입니다.</iframe>
+   <img src ="./css.png" width="100">
+   <img src = "./zzang.png" width="100">
+   <figure title="그림을 블록화 시키고 마진준것처럼 여백설정해줌.">
+      <img src ="./css.png" width="100">
+   </figure>
+   <figure>
+      <img src ="./zzang.png" width="100">
+   </figure>
+   <details>
+      <summary>요약만들기(클릭)</summary>
+      <p>클릭해서 열면 보이지요~</p>
+   </details>
+   <mark>형광펜효과~</mark>
+   <time title="시간임을 표시">10:34:53</time>
+   <meter value="0.8">80%표시(화면에 안나타남)</meter>
+   <progress value="2" max="10">진행도(화면에 안나타남)</progress>
+   <form form action = "http://localhost:8080/form.jsp" name = "person_info" method = "post">
+      <input type = "text" size = "15" value = "010-xxxx-xxxx"/>
+      <input type = "text" size = "15" placeholder = "예시보이기"/>
+      <input type = "password" size = "15"/>
+      <input type = "submit" value="완료"/>
+      <input type="reset" value="리셋"/>
+      <input type="button" value="버튼"/>
+   </form>
+   <form>
+      <textarea cols ="15" rows ="15">기본텍스트</textarea>
+   </form>
+   <form>
+      자동완성 : <input type="text" list="ID"/>
+      <datalist id="ID">
+         <option value="1번"/>
+         <option value="2번"/>
+         <option value="3번"/>
+      </datalist>
+   </form>
+
+   <button type="button" title="이미지 삽입시 테투리 있음">버튼</button>
+   <input type="button" value="버튼" title="이미지 삽입시 테두리없음">
+
+   <form>
+      체크박스 : <input type="checkbox" value="1"> <input type="checkbox" value="2">
+      옵션 : <input type="radio" name="group" value="1"> <input type="radio" name="group" value="2" checked>
+   </form>
+
+   <select>
+      <option value="1">옵션1</option>
+      <option value="2" selected>옵션2</option>
+   </select>
+
+   <label title="이미지 클릭해도 체크됨">
+      <input type="checkbox" value="1">
+      <img src="./css.png" width="50"/>
+   </label>
+
+   <form>
+      색입력 : <input type="color" value="pink"></br>
+      년/월 : <input type="month" value="2019-07"></br>
+      년/주 : <input type="week" value="2019-w16"></br>
+      년/월/일 : <input type="date" value="2019-07-19"></br>
+      시/분 : <input type="time" value="21:30"></br>
+      스핀버튼 : <input type="number" min="0/0" step="0.5"></br>
+      슬라이드바 : <input type="range" min="0" max="100" list="ID2">
+                     <datalist id="ID2">
+                        <option value="12" label="Low">
+                        <option value="20" label="Medium">
+                        <option value="28" label="High">
+                     </datalist>
+   </form>
+
+   <fieldset>
+      <legend>그룹 제목</legend>
+      이름 : <input type="text" size="3">
+      이메일 : <input type="email">
+   </fieldset>
+
+   <small>작은글씨</small>
+   <b>진하게</b>
+   <strong>진하게</strong>
+   <i>기울여서</i>
+   <del>삭제</del>
+   <ins>밑줄</ins>
+</body>
+</html>
