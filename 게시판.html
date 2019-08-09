@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>게시판</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Javascript -->
+    <script type="text/javascript">
+        function addContent() {
+            var body = document.getElementById('table_body');
+            var row = body.insertRow(0); // 상단에 추가
+            // var row = my_tbody.insertRow( my_tbody.rows.length ); // 하단에 추가
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            cell1.innerHTML = '9';
+            cell2.innerHTML = '나는 글을 추가할꺼야~!!!';
+            cell3.innerHTML = '김명성';
+            cell4.innerHTML = '2019.08.03';
+            cell5.innerHTML = '5';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+            <h2>게시판</h2>
+            <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>날짜</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+                        <tr>
+                            <td>8</td>
+                            <td>방학이 끝나가...</td>
+                            <td>김용훈</td>
+                            <td>2019.08.03</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>나도...</td>
+                            <td>지원석</td>
+                            <td>2019.08.03</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>웹스터디 귀찮...</td>
+                            <td>한상훈</td>
+                            <td>2019.08.03</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>로그인창 만들기</td>
+                            <td>유세헌</td>
+                            <td>2019.08.03</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>4차과제 Javascript</td>
+                            <td>한승구</td>
+                            <td>2019.08.03</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3차과제 HTML&CSS 실습</td>
+                            <td>김재원</td>
+                            <td>2019.08.03</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2차과제 CSS</td>
+                            <td>서동석</td>
+                            <td>2019.08.02</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1차과제 HTML</td>
+                            <td>김명성</td>
+                            <td>2019.08.02</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr/>
+                <button class="btn btn-default pull-right" onclick="addContent()">글쓰기</button>
+                <div class="text-center">
+                    <ul class="pagination">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                </div>
+    </div>
+</body>
+</html>
