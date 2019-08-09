@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+    <head>
+    
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            function loginCheck() {
+                var id = document.getElementById("id");
+                var pw = document.getElementById("password");
+                if(id.value == ""){
+                    alert("아이디를 입력하세요..!!");
+                    id.focus();
+                    return ;
+                }
+                else if(pw.value == ""){
+                    alert("비밀번호를 입력하세요..!!");
+                    pw.focus();
+                    return ;
+                }
+                else if(id.value == "maeng2418@naver.com" && pw.value == "1234"){
+                    alert("로그인되었습니다.");
+                    return ;
+                }
+                else {
+                    alert("로그인 실패");
+                    return ;
+                }
+            }
+        </script>
+
+    </head>
+    <h3>로그인</h3>
+    <body>
+        <form>
+            <fieldset>
+               
+                아이디 : <input type="text" /> <br />
+                비밀번호 : <input type="password" />
+                
+            </fieldset>
+            remember me <input type= "checkbox" name="rememberme" value="remember me">
+            <center> 
+<button
+type="button"
+style="color: #fff; background:blue; font-size:2em; border-radius:0.5em; padding:5px 20px;"
+onclick="alert">로그인</button>
+<button
+type="button"
+style="color:#fff; background:green; font-size:2em; border-radius:0.5em; padding:5px 20px;"
+onclick="alert">회원가입</button>
+</center>
+                
+        </form>
+    </body>
+</html>
+
